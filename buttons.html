@@ -1,0 +1,79 @@
+<style>
+    .subscribe
+    {
+        background-color: rgb(201, 0, 0);
+        color: white;
+        border: none;
+        height:36px;
+        width:105px;
+        border-radius:2px;
+        cursor:pointer;
+        margin-right:8px ;
+        transition: opacity 0.15s;
+        /* transition will transition the property after few time.first value will the property you want to trnsition the second value will th e the time rquired to transition */
+
+    }
+    .subscribe:hover
+    {
+        /* background-color: green; */
+        opacity:0.7 ;
+        /* opacity takes the see through it ranges from 0 to 1.if 1 it remains the same else if we decrease the value it will fade more */
+        /* hover s a psuedo class and adds extra style in ceertsain situation along with already existing style*/
+    }
+    .subscribe:active{
+        /* background-color: blue;
+        active psuedo class make the style when we click on the button */
+    opacity: 0.5;
+    }
+    .join
+    {
+        background-color: white;
+        border-color: rgb(105, 105, 253);
+        border-style: solid;
+        border-width: 1px;
+        color:rgb(105, 105, 253);
+        height:36px;
+        width:62px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 1s,color 1s;
+
+    }
+    .join:hover{
+        background-color:rgb(105, 105, 253);
+        color:white;
+
+    }
+    .join:active
+    {
+        opacity:0.7;
+    }
+    .tweet
+    {
+        background-color: rgb(69, 69, 255);
+        color: white;
+        border: none;
+        height:36px;
+        width:80px;
+        border-radius:18px;
+        font-weight:bold;
+        font-size:15px;
+        cursor: pointer;
+        margin-left: 8px;
+        /* box-shadow: 10px 10px 10px rgba(0,0,0,0.15); */
+        /* box shadow the first value determines the horizontal position the second value vertical position the third value gives blur and last value color */
+        /* if we give border radius to half of height or width whichever is the smallest value we will get round border*/
+    }
+    .tweet:hover{
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+    }
+</style>
+<button class="subscribe">Subscribe</button>
+<!-- css selector which elemnets we are targeting -->
+<!-- css property css value -->
+<!-- rgb value represents how much red green and blue ,if all set to 255 gives white and 0 black-->
+<!-- cursor gives the hand while pionting -->
+<button class="join">Join</button>
+
+<!-- in css space between object is given by margin -->
+<button class="tweet">Tweet</button>
