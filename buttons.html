@@ -4,14 +4,20 @@
         background-color: rgb(201, 0, 0);
         color: white;
         border: none;
-        height:36px;
-        width:105px;
+        /* height:36px;
+        width:105px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
         border-radius:2px;
         cursor:pointer;
         margin-right:8px ;
         transition: opacity 0.15s;
+        vertical-align: top;
+        /* padding is an alternative to heightt nd width */
         /* transition will transition the property after few time.first value will the property you want to trnsition the second value will th e the time rquired to transition */
-
+        margin-left: 30px;
     }
     .subscribe:hover
     {
@@ -32,8 +38,14 @@
         border-style: solid;
         border-width: 1px;
         color:rgb(105, 105, 253);
-        height:36px;
-        width:62px;
+        /* height:36px;
+        width:62px; */
+        /* padding-left: 30px;
+        padding-top: 20px; */
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
         border-radius: 2px;
         cursor: pointer;
         transition: background-color 1s,color 1s;
@@ -60,10 +72,12 @@
         font-size:15px;
         cursor: pointer;
         margin-left: 8px;
+        transition:box-shadow 0.15s;
+        vertical-align: top;
         /* box-shadow: 10px 10px 10px rgba(0,0,0,0.15); */
         /* box shadow the first value determines the horizontal position the second value vertical position the third value gives blur and last value color */
         /* if we give border radius to half of height or width whichever is the smallest value we will get round border*/
-    }
+    } 
     .tweet:hover{
         box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
     }
@@ -77,3 +91,4 @@
 
 <!-- in css space between object is given by margin -->
 <button class="tweet">Tweet</button>
+<!-- inside spacing is called padding and outside spacing margin -->
