@@ -27,13 +27,63 @@
             rating:{
                 stars:4.5,
                 count:87//nested object
+            },
+            fun:function function1(){
+                console.log('funtion inside anotherv object');
             }
         };
         console.log(product2);
         console.log(product2['name']);
         //we cant use .notataion incase of console.log(product2.delivery-time) bcoz it will consider it as - sign so we use barcket notation
           console.log(product2.rating.count);
+          product2.fun();
+          //function inside object is called method
+          //JSON IS SIMILAR to javascript object.we use to send or store data
+
+           console.log(JSON.stringify(product2));
+           const jsonstring=JSON.stringify(product2)
+           console.log(JSON.parse(jsonstring));
+
+           console.log('hello'.length);
+           console.log("hello".toUpperCase());
+           const object1={
+            message:'hello'
+           }
+           const object2=object1;
+           object1.message='GOD HELP ME';
+           console.log(object1);
+           console.log(object2);//it will show the same value as it's a reference type
+           const object3={
+            message:'GOD HELP ME'
+           }
+           console.log(object3===object1);
+           console.log(object2===object1);
+           const object4={
+            message:'GOD HELP ME',
+            price:799
+           }
+        //    const message=object4.message;
+     const {message,price}=object4;
+     console.log(message);
+     console.log(price);
+     const object5={
+        // message:message
+        message,
+        // method:function function2()
+        // {
+        //     console.log('method');
+        // }
+        method()
+        {
+            console.log('method');
+        }
+
+     };
+     console.log(object5);
+     object5.method();
+
+
 
     </script>
 </body>
-</html>l
+</html>
